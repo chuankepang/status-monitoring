@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ur5.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="5.34308323316329E-35 4.78579574584961E-18 0.00956848133500924"
+        rpy="0 0 0" />
+      <mass
+        value="0.331298067001006" />
+      <inertia
+        ixx="0.000451020384705195"
+        ixy="-4.33455821036415E-37"
+        ixz="-5.80131657311115E-37"
+        iyy="0.000451020384705195"
+        iyz="2.73825165962651E-20"
+        izz="0.000881270323691048" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-5.82515774503562E-08 0.0621788449813843 0.00750935104779833"
+        rpy="0 0 0" />
+      <mass
+        value="1.47355665388436" />
+      <inertia
+        ixx="0.00331913416092354"
+        ixy="2.14888568216572E-09"
+        ixz="-4.60308702980207E-09"
+        iyy="0.00289111557859185"
+        iyz="-0.000136923301384187"
+        izz="0.00308150462182608" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0203"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="7.15558768459779E-09 0.0578591866160727 -0.213268579098944"
+        rpy="0 0 0" />
+      <mass
+        value="4.4556717052208" />
+      <inertia
+        ixx="0.133902755882688"
+        ixy="-3.03243954460099E-09"
+        ixz="-3.14939286932575E-08"
+        iyy="0.133603969171234"
+        iyz="6.35794334343194E-06"
+        izz="0.00690532090954318" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="fixed">
+    <origin
+      xyz="0 0.0689 0.0663"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.180100715737868 0.0451177928050438 1.70781641085997E-06"
+        rpy="0 0 0" />
+      <mass
+        value="2.39705945035467" />
+      <inertia
+        ixx="0.00222792511985186"
+        ixy="0.0013450113946414"
+        ixz="1.9603411126076E-08"
+        iyy="0.0502190008224326"
+        iyz="-2.19317921817102E-09"
+        izz="0.0502977735545715" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.425"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="4.55675153224247E-08 0.0568180882169727 -0.00493057179922751"
+        rpy="0 0 0" />
+      <mass
+        value="0.56649567508287" />
+      <inertia
+        ixx="0.000811850661630824"
+        ixy="3.6134235664713E-10"
+        ixz="-3.20983942386057E-10"
+        iyy="0.000507528486399255"
+        iyz="5.79559276515687E-05"
+        izz="0.000722424802923174" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="fixed">
+    <origin
+      xyz="-0.392 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="7.87347310779046E-09 0.0454695865347658 -0.00584170236320436"
+        rpy="0 0 0" />
+      <mass
+        value="0.478140247886891" />
+      <inertia
+        ixx="0.000545831124026567"
+        ixy="4.3134283893649E-10"
+        ixz="-3.52302716154731E-10"
+        iyy="0.000442857513180117"
+        iyz="3.37900935572524E-05"
+        izz="0.000458950808145618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="fixed">
+    <origin
+      xyz="0 0.075 -0.05"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0 0.02 2.85301294380238E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.176714586764426" />
+      <inertia
+        ixx="8.56881668112919E-05"
+        ixy="4.19649292215791E-20"
+        ixz="-7.4117274495299E-37"
+        iyy="0.000124252443818737"
+        iyz="-2.15359728653026E-21"
+        izz="8.56881668112919E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur5.SLDASM/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="fixed">
+    <origin
+      xyz="0 0.055 -0.05"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

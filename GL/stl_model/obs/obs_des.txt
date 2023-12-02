@@ -1,0 +1,2 @@
+//            model_path link r   p   y,  x   y   z, joint parent,  r      p      y   x       y      z, axiz x  y  z, color   r   g    b   a  dir base pos offset
+../test_opengl/stl_model/obs/obs.STL      0   0   0   0   0   0             0   1.5708     0.     0   0.14   0.71    0.0       0  0  0        0.4   0    0.  1    1               0

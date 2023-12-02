@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>image/Stop.png</file>
+        <file>image/glove.png</file>
+        <file>image/ur5.png</file>
+        <file>image/agv.png</file>
+        <file>image/left_arm.png</file>
+        <file>image/right_arm.png</file>
+        <file>image/mouse.png</file>
+        <file>image/stick.png</file>
+        <file>image/Backgroud.png</file>
+        <file>image/Backgroud_1920x1080.png</file>
+    </qresource>
+</RCC>

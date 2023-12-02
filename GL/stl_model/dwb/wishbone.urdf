@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="wishbone">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.160531478594949 -0.0671040589363603 -1.13284247749603"
+        rpy="0 0 0" />
+      <mass
+        value="0.465977095928513" />
+      <inertia
+        ixx="0.00165657841395577"
+        ixy="-1.29225056834653E-06"
+        ixz="-4.41843857440432E-07"
+        iyy="0.00167617923233259"
+        iyz="6.73484790860955E-06"
+        izz="0.00278693684490604" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0833607563807807 -0.0191150319990638 -2.35210015166187E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.665130837715267" />
+      <inertia
+        ixx="0.00329811021485882"
+        ixy="0.00017776190228704"
+        ixz="-9.15780609995765E-08"
+        iyy="0.00231724682393351"
+        iyz="5.31011663694111E-08"
+        izz="0.00231130840728923" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="-0.16057 -0.06651 -1.0763"
+      rpy="1.1781 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.00266834021636876 -2.44372501397404E-07 6.3020225736835E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.66908452072339" />
+      <inertia
+        ixx="0.642605046333379"
+        ixy="-6.04957834714438E-08"
+        ixz="-8.69240877887645E-08"
+        iyy="0.0157748878524516"
+        iyz="1.1911072978014E-07"
+        izz="0.640631186508925" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="1.0763 -0.1738 0"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.714536111956231 -0.00461774280311977 8.31249433286274E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.20766633091557" />
+      <inertia
+        ixx="0.0343615725492476"
+        ixy="0.000775121198943715"
+        ixz="-7.80988585404215E-08"
+        iyy="0.197452777250964"
+        iyz="4.263392555659E-09"
+        izz="0.217871670933389" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="-0.1738 -1.0761 -0.0049706"
+      rpy="0 -0.06545 1.5708" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0754569900178945 -0.0134309499132184 -3.08793119252471E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.326135028206327" />
+      <inertia
+        ixx="0.000919272700073011"
+        ixy="6.56049466863603E-05"
+        ixz="-1.89973974423459E-08"
+        iyy="0.000646492614552187"
+        iyz="1.76986040952779E-09"
+        izz="0.000650382504919044" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="-1.278 0.3225 0"
+      rpy="2.9452 0 1.5708" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="2.44007334528965 -0.716615453900504 -0.563800957099661"
+        rpy="0 0 0" />
+      <mass
+        value="0.691422847800219" />
+      <inertia
+        ixx="0.00534826714028448"
+        ixy="5.03548096868514E-05"
+        ixz="-1.84618110285039E-08"
+        iyy="0.00127030139978846"
+        iyz="-2.71627930533401E-07"
+        izz="0.00499758811112933" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="-0.4963 2.2942 0.52305"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="0.0585243991975826 -0.00753124098160329 2.91940719032713E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.175290234601757" />
+      <inertia
+        ixx="0.00028109745536702"
+        ixy="2.33235784988086E-05"
+        ixz="7.09173454484821E-10"
+        iyy="0.00020017666103792"
+        iyz="-3.82968718508568E-09"
+        izz="0.000220761811250166" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="2.3107 -1.099 -0.5638"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.0019337 -0.042345 0.00062954"
+        rpy="0 0 0" />
+      <mass
+        value="0.30379" />
+      <inertia
+        ixx="0.0016544"
+        ixy="2.2182E-05"
+        ixz="1.7733E-05"
+        iyy="0.00038475"
+        iyz="7.2012E-06"
+        izz="0.0016056" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="continuous">
+    <origin
+      xyz="-0.312 0 0"
+      rpy="0 0.31416 1.5708" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="link8">
+    <inertial>
+      <origin
+        xyz="0.0585244443292832 -0.00753006665151856 -1.11931614121819E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.175286422388475" />
+      <inertia
+        ixx="0.000281095033462305"
+        ixy="2.33226951495422E-05"
+        ixz="8.99278989477197E-10"
+        iyy="0.000200177081032802"
+        iyz="-5.06279603563499E-09"
+        izz="0.000220757078147255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="continuous">
+    <origin
+      xyz="-0.10937 0.103 -0.035537"
+      rpy="-2.8274 0 -1.5708" />
+    <parent
+      link="link7" />
+    <child
+      link="link8" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="link9">
+    <inertial>
+      <origin
+        xyz="-1.3103 -1.5207 2.1178"
+        rpy="0 0 0" />
+      <mass
+        value="0.027499" />
+      <inertia
+        ixx="1.2787E-05"
+        ixy="-1.2102E-19"
+        ixz="4.4999E-20"
+        iyy="2.5224E-05"
+        iyz="2.1557E-19"
+        izz="1.2787E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="fixed">
+    <origin
+      xyz="1.514 -2.4257 -0.5638"
+      rpy="0 -0.78837 -1.5708" />
+    <parent
+      link="link8" />
+    <child
+      link="link9" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link10">
+    <inertial>
+      <origin
+        xyz="0.224156615848704 -2.33315629395042 -0.394721108830225"
+        rpy="0 0 0" />
+      <mass
+        value="0.326136483248928" />
+      <inertia
+        ixx="0.000919272814773773"
+        ixy="6.56047826318396E-05"
+        ixz="-2.00791988997203E-08"
+        iyy="0.000646494448353383"
+        iyz="6.88812653061385E-09"
+        izz="0.000650379904801695" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint10"
+    type="continuous">
+    <origin
+      xyz="1.0742 -0.1738 -0.065423"
+      rpy="-0.19635 0 -1.5708" />
+    <parent
+      link="link3" />
+    <child
+      link="link10" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="link11">
+    <inertial>
+      <origin
+        xyz="2.46559935288675 -0.0393529236004726 0.4228022241488"
+        rpy="0 0 0" />
+      <mass
+        value="0.691425691609442" />
+      <inertia
+        ixx="0.00534826878064671"
+        ixy="5.0353867903361E-05"
+        ixz="-2.09513788033776E-08"
+        iyy="0.00127031034460782"
+        iyz="-2.70302529342936E-07"
+        izz="0.0049975794420376" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint11"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-2.2907 0 -1.5708" />
+    <parent
+      link="link10" />
+    <child
+      link="link11" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link12">
+    <inertial>
+      <origin
+        xyz="0.0585242171505302 -0.00753103507126429 3.40826185152299E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.17529111382174" />
+      <inertia
+        ixx="0.000281111504372523"
+        ixy="2.33258935849237E-05"
+        ixz="4.11816309324945E-09"
+        iyy="0.00020018992305278"
+        iyz="-2.13027920882325E-09"
+        izz="0.000220770780103072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint12"
+    type="continuous">
+    <origin
+      xyz="2.3362 -0.42073 0.41207"
+      rpy="0 -0.19635 1.5708" />
+    <parent
+      link="link11" />
+    <child
+      link="link12" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link13">
+    <inertial>
+      <origin
+        xyz="0.0019335535997026 -0.0423447437146522 0.000630053648278839"
+        rpy="0 0 0" />
+      <mass
+        value="0.303792780693624" />
+      <inertia
+        ixx="0.00165445442370701"
+        ixy="2.21830893328507E-05"
+        ixz="1.7732593812328E-05"
+        iyy="0.000384750557335747"
+        iyz="7.20420000824356E-06"
+        izz="0.00160564247916199" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link13.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link13.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint13"
+    type="continuous">
+    <origin
+      xyz="-0.312 0 0"
+      rpy="0 1.4167 1.5708" />
+    <parent
+      link="link12" />
+    <child
+      link="link13" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link14">
+    <inertial>
+      <origin
+        xyz="-1.5958 -0.3942 1.9494"
+        rpy="0 0 0" />
+      <mass
+        value="0.17529" />
+      <inertia
+        ixx="0.00020018"
+        ixy="-2.3323E-05"
+        ixz="2.44E-09"
+        iyy="0.0002811"
+        iyz="1.8391E-10"
+        izz="0.00022076" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link14.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.39216 0.6 0.39216 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link14.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint14"
+    type="continuous">
+    <origin
+      xyz="0.83909 -0.64425 2.2339"
+      rpy="-2.9875 -0.31416 0" />
+    <parent
+      link="link13" />
+    <child
+      link="link14" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link15">
+    <inertial>
+      <origin
+        xyz="0.252179940692889 -0.459386486437559 2.51144408339926"
+        rpy="0 0 0" />
+      <mass
+        value="0.0274993681930135" />
+      <inertia
+        ixx="1.27866291608029E-05"
+        ixy="-5.98925562058728E-16"
+        ixz="7.79323780428752E-17"
+        iyy="2.52239106010299E-05"
+        iyz="-4.61030080553385E-16"
+        izz="1.278662916074E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link15.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://wishbone/meshes/link15.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint15"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -0.78837 0" />
+    <parent
+      link="link14" />
+    <child
+      link="link15" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

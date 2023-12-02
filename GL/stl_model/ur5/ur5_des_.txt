@@ -1,0 +1,2 @@
+//              model_path link r p y, x y z, joint parent,      r        p      y          x      y        z,   axiz x   y   z,  color  r     g     b     a    dir base pos offset
+../stl_model/ur5/base_link.STL  0 0 0  0 0 0             0       0        0      1.5708     0.     0.       0.        0   0   0          0.9   0     0.8   1    1   0
